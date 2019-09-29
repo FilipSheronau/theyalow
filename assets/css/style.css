@@ -1,0 +1,784 @@
+@font-face {
+  font-family: "Lucida Sans Italic";
+  font-style: normal;
+  font-weight: normal;  
+  src: local("Lucida Sans Italic"), url("../fonts/LucidaSansItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe WP";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe WP"), url("../fonts/SegoeWP.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Asap";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Asap"), url("../fonts/Asap.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe UI Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Light"), url("../fonts/SegoeUILight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI"), url("../fonts/SegoeUI.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PT Sans"), url("../fonts/PTSans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe WP Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe WP Light"), url("../fonts/SegoeWPLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Segoe UI Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Bold"), url("../fonts/SegoeUIBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial MT Std";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Arial MT Std"), url("../fonts/ArialMTStd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sans"), url("../fonts/OpenSans.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1300px;
+  height: 566px;  
+  background: url(../img/header-bg.png) no-repeat;  
+}
+
+header .wripper {  
+  max-width: 1021px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.menu-line {
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap: wrap;
+  padding-top: 27px;  
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;  
+  width: 312px;
+  height: 85px;
+  align-self: flex-start;
+  margin:0 20px 20px 0;
+  vertical-align: bottom;
+}
+
+.logo h1 {
+  font-family: "Lucida Sans Italic",Helvetica,Arial,sans-serif;
+  font-size: 41px;  
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: normal;
+  height: 61px;
+  display: block;
+  align-self: center;
+  padding-top: 24px;
+  letter-spacing: 0.35px;
+}
+
+.menu {  
+  align-self:flex-end;
+  width: 453px;
+  height: 41px;
+  margin: 0 0 20px 0;;
+  padding: 9px 0 0 9px;
+  background: url(../img/shadow-menu.png) no-repeat left top;
+  display: flex;
+  list-style: none;
+  float: left;
+}
+
+.menu i {
+  margin-right: 9px;
+}
+
+.img-about {
+  width: 22px;
+  height: 20px;
+}
+
+.img-services {
+  width: 20px;
+  height: 20px;
+}
+
+.img-contact {
+  width: 25px;
+  height: 19px;
+}
+
+.menu li:last-child img {  
+  margin-right: 7px;
+}
+
+.menu li:first-child {
+  flex-basis: auto; 
+  align-self: stretch;
+}
+.menu li:last-child {
+  flex-basis: auto;  
+  align-self: stretch;
+}
+
+.menu li:last-child a {
+  padding: 10px 0 0 16px;
+  border-right: none;
+}
+
+.menu li {
+  flex-basis: auto;  
+  align-self: stretch;
+}
+
+.menu li:first-child a {
+  padding: 10px 0 0 38px;
+}
+
+.menu li a {
+  font-family: "Segoe WP",Helvetica,Arial,sans-serif;
+  letter-spacing: 0.20px;
+  text-transform: uppercase;
+  text-decoration: none;  
+  line-height: 20px;
+  color: #9b7d08;
+  font-size: 17px;
+  display: block;
+  height: 31px;
+  padding: 10px 0 0 13px;
+  background: #f5c506;
+  border-right: solid 1px #dcb105;
+}
+
+.menu li a:hover {
+  background: #ffd93f;
+  color: #aa9956;
+}
+
+.head-slider {
+  display: flex;
+  padding: 37px 11px;
+}
+
+.head-slider video {
+  min-width: 549px;
+}
+
+.head-slider h2 {
+  align-self: center;
+  flex-grow: 1;
+  font-family: "Asap",Helvetica,Arial,sans-serif;
+  font-size: 63px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  padding-left: 5px;
+  width: 390px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.head-slider h2 span {
+  color: #f5c506;
+}
+
+.slider-left {
+  position: absolute;
+  width: 25px;
+  height: 37px;
+  background: #c8a20b;
+  color: #ffffff;
+  padding: 20px 0 0 7px;
+  top: 300px;
+  left: 0px;
+}
+
+.slider-right {
+  position: absolute;
+  width: 22px;
+  height: 37px;
+  background: #c8a20b;
+  color: #ffffff;
+  padding: 20px 0 0 10px;
+  top: 300px;
+  right: 0px;
+}
+
+.slider-left:hover,
+.slider-right:hover {
+  background: #c9a61b;
+  color: #dbdbdb;
+  cursor: pointer;
+}
+
+main>.wripper {
+  position: relative;
+  max-width: 1300px;  
+  margin: 0 auto;
+  background: url(../img/bg.png); 
+}
+
+.main-menu {
+  display: flex;
+  max-width: 1021px;  
+  margin: 0 auto;
+  padding: 0 30px;
+  list-style: none;
+  height: 215px;
+}
+
+.main-menu li {
+  flex-grow: 1;
+  flex-basis: 100px;
+  border-left: solid 1px #d4d4d4;
+  text-align: center;
+  padding-top: 50px;  
+}
+
+.main-menu li a {
+  color: #f5c506;
+  text-decoration: none;
+}
+
+.main-menu li a:hover {
+  color: #f8d136;
+}
+
+.main-menu li a:hover span {
+  color: #666565;
+}
+
+.main-menu li span {
+  font-family: "Segoe UI Light",Helvetica,Arial,sans-serif;
+  color: #000000;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+.main-menu li:last-child {
+  border-right: solid 1px #d4d4d4;
+}
+
+.content-block {
+  position: relative;
+  max-width: 1300px;  
+  margin: 0 auto;
+  background: url(../img/content-block-bg.png) no-repeat;  
+}
+
+.content-block .wripper {
+  max-width: 1081px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+article {
+  padding: 30px;
+}
+
+article h2 {
+  font-family: "PT Sans",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  font-size: 37px;
+  font-weight: normal;
+  color: #ffffff;
+  margin: 0 0 35px 0;  
+}
+
+.content-block-line {
+  display: flex;
+  flex-wrap: nowrap;  
+}
+
+.content-block-line>div {
+  height: 230px;
+  position: relative;
+  background: #ec9e03;
+  font-family: "Segoe WP Light",Helvetica,Arial,sans-serif;
+  font-size: 29px;
+  font-weight: normal;
+  color: #ffffff;
+  flex-basis: 250px;
+  flex-grow: 1;
+  padding: 0 20px;
+  overflow: hidden;  
+  text-overflow: ellipsis;
+  line-height: 43px;
+}
+
+.content-block-line>div p {
+  margin-top: 10px;
+}
+
+.twit {
+  height: 175px!important;
+  text-align: center;
+  padding-top: 55px!important;
+}
+
+.note i,
+.twit .fa-plus {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.5em;
+}
+
+.twit .number {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.7em;
+}
+
+.twit .fa-twitter {
+  color: #c18000;
+}
+
+.twit .fa-twitter:hover {
+  color: #c78c17;
+  cursor: pointer;
+}
+
+.note i:hover,
+.twit .fa-plus:hover,
+.twit .number:hover {
+  color: #f9e900;
+  cursor: pointer;
+}
+
+.animation {
+  background: none!important;
+  min-width: 240px;
+  padding: 0!important;
+  margin-right: 20px;
+  height: 230px!important;  
+  color: #bb9a05!important;
+}
+
+.animation video {
+  width: 100%; 
+}
+
+.date-block-line {
+  width: 112px;
+  height: 54px;
+  padding-top: 20px;
+  background: #ddb101;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.date-block-line .date-number {
+  font-family: "Segoe UI Bold",Helvetica,Arial,sans-serif;
+  font-size: 51px;  
+  color: #ffffff;
+  line-height: 10px!important;;
+}
+
+.date-block-line span {
+  text-transform: uppercase;
+  width: 21px;
+  color: #b26529;  
+  line-height: 20px;
+  font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+}
+
+.range-slider {
+  margin-top: 40px;
+  height: 16px;
+  background: url(../img/range.png) no-repeat center;
+  cursor: pointer;
+}
+
+.bottom-block {
+  position: relative;
+  max-width: 1300px;
+  min-height: 495px;  
+  margin: 0 auto;
+  background: url(../img/bottom-block-bg.png);  
+}
+
+.bottom-block .wripper {
+  max-width: 1021px;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+.bottom-block h1{
+  font-family: "PT Sans",Helvetica,Arial,sans-serif;
+  font-size: 43px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #f5c506;
+  margin: 0;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.bottom-block-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bottom-block img {
+  display: block;
+  flex-basis: 561px;
+  margin: 0 60px 0 0;
+}
+
+.bottom-block ul {
+  display: block;
+  padding: 85px 0 0 0px;
+  list-style-image: url(../img/circle-list.png);
+  flex-basis: 325px;  
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  color: #a9a9a7;  
+  margin:0 auto;
+}
+
+.bottom-block ul li {  
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+footer {
+  position: relative;
+  max-width: 1300px;
+  height: 63px;  
+  margin: 0 auto;
+  background: #4c4c4c;
+  box-shadow: 0 -1px 5px 2px #000000;
+}
+
+footer .wripper {  
+  max-width: 1021px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-between;  
+  width: 220px;
+  height: 63px;  
+}
+
+.footer-logo img {
+  display: block;
+  height: 56px;
+  margin-top: 3px;
+}
+
+.footer-logo h1 {
+  font-family: "Lucida Sans Italic",Helvetica,Arial,sans-serif;
+  font-size: 29px;  
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: normal;  
+  display: block;
+  margin-top: 16px;
+  letter-spacing: 0.35px;
+}
+
+@media only screen and (min-width : 880px) {
+
+  body {
+    background: url(../img/bg-main.png);
+  }
+
+  .menu li:first-child {  
+    width: 173px;    
+  }
+  .menu li:last-child {    
+    width: 147px;
+  }  
+  .menu li {    
+    width: 134px;    
+  }
+
+}
+
+@media only screen and (max-width : 879px) {
+  body {
+    background: #ffffff;
+  }
+
+  header .wripper {    
+    padding: 0;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .menu-line {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding-top: 0;
+  }
+
+  .logo {
+    background: url(../img/logo-gradient.png);    
+    min-width: 154px;
+    max-width: 154px;
+    height: 52px;
+    padding: 10px 21px 0 11px;
+    margin: 0;
+  }
+
+  .logo img {
+    width: 41px;
+    height: 41px;    
+  }
+
+  .img-about {
+    width: 22px;
+    height: 20px;
+  }
+  
+  .img-services {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .img-contact {
+    width: 25px;
+    height: 19px;
+  }
+  
+  .logo h1 {    
+    font-size: 19px;
+    height: 29px;    
+    padding-top: 0;
+    letter-spacing: 0.7px;
+  }
+  
+  .menu {
+    flex-grow: 1;
+    height: 62px;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+
+  .align-container {
+    width: 105px;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+
+  .menu li {
+    flex-grow: 1; 
+  }
+
+  .menu li a {
+    height: 40px;
+    padding: 22px 0 0 0;
+  }
+
+  .menu li:first-child {    
+    flex-grow: 1;
+  }
+
+  .menu li:last-child {
+    flex-grow: 1;    
+  }
+  
+  .menu li:last-child a {
+    padding: 20px 0 0 0;
+    border-right: none;
+    height: 42px;
+  }
+  
+  .menu li:first-child a {
+    padding: 20px 0 0 0;
+    height: 42px;
+  }
+
+  .head-slider h2,
+  .slider-left,
+  .slider-right,
+  article h2,
+  .date-block-line,
+  .range-slider,
+  .bottom-block-container ul,
+  .twit .fa-plus,
+  .twit .number {
+    display: none;
+  }
+
+  .head-slider {
+    padding: 0;    
+  }
+
+  .head-slider video {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-menu {
+    padding: 0px;
+  }
+
+  .main-menu li {
+    border: none;
+  }
+
+  .main-menu {
+    height: 180px;    
+  }
+
+  .main-menu li {
+    padding-top: 30px;
+  }
+
+  .content-block {    
+    background: none;  
+  }
+
+  article {
+    padding: 5px;
+  }
+
+  .content-block-line {
+    flex-wrap: wrap;  
+  }
+
+  .content-block-line>div {
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+
+  .animation {
+    background-size: 100% 100%!important;
+  }
+
+  .twit {
+    height: 230px!important;
+    padding-top: 0!important;
+    display: flex;
+    background: #f5c507!important;
+  }
+
+  .twit-logo-block {
+    flex-basis: 220px;
+    flex-grow: 1;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .twit-form-block {
+    flex-basis: 220px;
+    flex-grow: 1;
+    display: block;
+    font-family: "Arial MT Std",Helvetica,Arial,sans-serif;
+  }
+
+  .twit-form-block ul {
+    list-style: none;
+    margin: 15px 5px 0;
+  }
+
+  .twit-form-block ul li {
+    display: block;
+    background: url(../img/message-bg.png) no-repeat;
+    width: 230px;
+    height: 30px;
+    margin: 12px 0;    
+    font-size: 13px;
+    color: #8f8e8e;
+    overflow: hidden;
+    text-align: left;
+    line-height: 15px;
+    padding: 8px 25px 5px 30px;
+  }
+
+  .twit-form-block ul li:first-child {
+    background: url(../img/last-message-bg.png) no-repeat;
+  }
+
+  #twit-form-message {
+    display: block;
+    width: 170px;
+    height: 28px;
+    margin-left: 55px;
+    padding: 0px 15px;
+    border: solid 1px #d0a706;
+    border-right: none;
+    border-radius: 18px 0 0 18px;
+    outline: none;
+    float: left;    
+  }
+
+  #submit-twit-form-message {
+    display: block;
+    border: solid 1px #d0a706;
+    border-left: none;
+    border-radius: 0 18px 18px 0;
+    padding-left: 2px;
+    margin: 0;
+    width: 70px;
+    height: 30px;    
+    outline: none;
+    font-size: 15px;
+    color: #ffffff;
+    background-image: linear-gradient(#eaa927, #cf8e0b);
+  }
+
+  #submit-twit-form-message:hover {
+    background: #dd9701;
+    color: #e4e4e4;
+    cursor: pointer;
+  }
+
+  .bottom-block-container img {
+    margin: 30px auto 0;
+  }
+
+}
