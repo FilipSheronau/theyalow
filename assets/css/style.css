@@ -72,6 +72,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.main-wrapper {
+  min-width: 600px;
+}
 
 header {
   position: relative;
@@ -81,7 +84,7 @@ header {
   background: url(../img/header-bg.png) no-repeat;  
 }
 
-header .wripper {  
+header .wrapper {  
   max-width: 1021px;
   margin: 0 auto;
   padding: 0 30px;
@@ -251,7 +254,7 @@ header .wripper {
   cursor: pointer;
 }
 
-main>.wripper {
+main>.wrapper {
   position: relative;
   max-width: 1300px;  
   margin: 0 auto;
@@ -306,7 +309,7 @@ main>.wripper {
   background: url(../img/content-block-bg.png) no-repeat;  
 }
 
-.content-block .wripper {
+.content-block .wrapper {
   max-width: 1081px;
   margin: 0 auto;
   padding: 0;
@@ -442,7 +445,7 @@ article h2 {
   background: url(../img/bottom-block-bg.png);  
 }
 
-.bottom-block .wripper {
+.bottom-block .wrapper {
   max-width: 1021px;
   margin: 0 auto;
   padding: 10px 30px;
@@ -496,7 +499,7 @@ footer {
   box-shadow: 0 -1px 5px 2px #000000;
 }
 
-footer .wripper {  
+footer .wrapper {  
   max-width: 1021px;
   margin: 0 auto;
   padding: 0 30px;
@@ -549,7 +552,7 @@ footer .wripper {
     background: #ffffff;
   }
 
-  header .wripper {    
+  header .wrapper {    
     padding: 0;
   }
 
